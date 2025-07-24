@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const details = () => {
+const SearchBar = () => {
     return (
         <View>
-            <Text>details</Text>
+            <Text>SearchBar</Text>
         </View>
     )
 }
 
-export default details
+export default SearchBar

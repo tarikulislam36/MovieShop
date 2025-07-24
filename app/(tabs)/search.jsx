@@ -3,7 +3,7 @@ import React from 'react'
 
 const search = () => {
     return (
-        <View>
+        <View ck>
             <Text>search</Text>
         </View>
     )
