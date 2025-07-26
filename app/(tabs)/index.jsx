@@ -3,10 +3,13 @@ import React from 'react'
 import { images } from '@/constants/images'
 import { icons } from '@/constants/icons'
 import SearchBar from '@/components/SearchBar'
+import { useRouter } from 'expo-router'
 
 
 
 const index = () => {
+    const router = useRouter();
+
     return (
         <View
             className='flex-1 bg-primary'
@@ -20,7 +23,11 @@ const index = () => {
                 <Image source={icons.logo} className='w-12 h-10 mt-20 mb-5 mx-auto' />
 
                 <View className="flex-1 mt-5">
-                    <SearchBar />
+                    <SearchBar
+                        onPress={() => router.push('/search')}
+                        placeholder='Search for a Movie, TV Show'
+
+                    />
 
                 </View>
             </ScrollView>
